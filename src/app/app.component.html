@@ -1,0 +1,15 @@
+<!-- <app-parent></app-parent> -->
+
+<div class="container">
+    <input type="text" #inputEl>
+    <button (click)="onBtnClicked(inputEl)">Submit</button>
+    <app-demo [message]="inputVal">
+       <p #temple>This is the projected content</p> 
+       <p #increase>{{textIncrement}}</p>
+       <p #myElment></p>
+    </app-demo>
+    
+    <div #myElement></div>
+    
+    <button (click)="toggleText(temple)" (click)="increaseNumber()">Click to Toggle</button>
+</div>
